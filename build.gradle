@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    jcenter() // Jcenter is a superset of mavenCentral, including many additional jars.
+    // Jcenter performance is better than mavenCentral.
+    // MavenCentral will automatically download many IDE-related indexes, and these are used less often which are not required.
+}
+
+dependencies {
+    // Implementation - seen only in compiling and running (used to be „compile”)
+    // compileOnly – seen in compiling
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    // http://hamcrest.org/JavaHamcrest/tutorial
+    testCompile group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
+
+}
+
+test {
+    // https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.Test.html
+    useJUnitPlatform()
+
+    failFast(true)
+}
