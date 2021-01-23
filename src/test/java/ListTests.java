@@ -79,7 +79,7 @@ public class ListTests {
     }
 
     @Test
-    public void getFirstThreePowerOfTwo() {
+    public void testFirstThreePowerOfTwo() {
 
         assertThat(ListExercises.getFirstThreePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), equalTo(List.of(4, 16, 64)));
 
