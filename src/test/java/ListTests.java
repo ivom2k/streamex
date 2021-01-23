@@ -45,17 +45,17 @@ public class ListTests {
     @Test
     public void testAllToThePowerTwo() {
 
-        assertThat(ListExercises.getAllToThePowerTwo(List.of(2, 4, 8, 16, 64)), equalTo(List.of(4, 16, 64, 256, 4096)));
+        assertThat(ListExercises.getAllToThePowerOfTwo(List.of(2, 4, 8, 16, 64)), equalTo(List.of(4, 16, 64, 256, 4096)));
 
-        assertThat(ListExercises.getAllToThePowerTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(2, 4, 8, 16, 64))));
+        assertThat(ListExercises.getAllToThePowerOfTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(2, 4, 8, 16, 64))));
     }
 
     @Test
     public void testAllToThePowerThree() {
 
-        assertThat(ListExercises.getAllToThePowerThree(List.of(2, 4, 8, 16)), equalTo(List.of(8, 64, 512, 4096)));
+        assertThat(ListExercises.getAllToThePowerOfThree(List.of(2, 4, 8, 16)), equalTo(List.of(8, 64, 512, 4096)));
 
-        assertThat(ListExercises.getAllToThePowerThree(List.of(2, 4, 8, 16)), is(not(List.of(2, 4, 8, 16))));
+        assertThat(ListExercises.getAllToThePowerOfThree(List.of(2, 4, 8, 16)), is(not(List.of(2, 4, 8, 16))));
     }
 
     @Test
@@ -81,11 +81,19 @@ public class ListTests {
     @Test
     public void testFirstThreePowerOfTwo() {
 
-        assertThat(ListExercises.getFirstThreePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), equalTo(List.of(4, 16, 64)));
+        assertThat(ListExercises.getFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), equalTo(List.of(4, 16, 64)));
 
-        assertThat(ListExercises.getFirstThreePowerOfTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(8, 64, 512))));
+        assertThat(ListExercises.getFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(8, 64, 512))));
 
-        assertThat(ListExercises.getFirstThreePowerOfTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(4, 16, 64, 256, 4096))));
+        assertThat(ListExercises.getFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 64)), is(not(List.of(4, 16, 64, 256, 4096))));
+    }
+
+    @Test
+    public void testSumOfFirstThreeToThePowerOfTwo() {
+
+        assertThat(ListExercises.getSumOfFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), equalTo(List.of(84)));
+
+        assertThat(ListExercises.getSumOfFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), is(not(List.of(196))));
     }
 
 }

@@ -22,12 +22,12 @@ public class ListExercises {
         throw new RuntimeException("not implemented yet");
     }
 
-    public static List<Integer> getAllToThePowerTwo(List<Integer> input) {
+    public static List<Integer> getAllToThePowerOfTwo(List<Integer> input) {
 
         throw new RuntimeException("not implemented yet");
     }
 
-    public static List<Integer> getAllToThePowerThree(List<Integer> input) {
+    public static List<Integer> getAllToThePowerOfThree(List<Integer> input) {
 
         throw new RuntimeException("not implemented yet");
     }
@@ -42,7 +42,12 @@ public class ListExercises {
         throw new RuntimeException("not implemented yet");
     }
 
-    public static List<Integer> getFirstThreePowerOfTwo(List<Integer> input) {
+    public static List<Integer> getFirstThreeToThePowerOfTwo(List<Integer> input) {
+
+        throw new RuntimeException("not implemented yet");
+    }
+
+    public static List<Integer> getSumOfFirstThreeToThePowerOfTwo(List<Integer> input) {
 
         throw new RuntimeException("not implemented yet");
     }
