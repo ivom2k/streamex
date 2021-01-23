@@ -18,14 +18,6 @@ public class ListTests {
     }
 
     @Test
-    public void testAllOnesDifferentTypes() {
-
-        assertThat(ListExercises.returnAllOnesDifferentTypes(List.of(1, 2, 11, 1.0)), equalTo(List.of(1, 1.0)));
-
-        assertThat(ListExercises.returnAllOnesDifferentTypes(List.of(1, 2, 11, 1.0)), is(not(List.of(1, 2, 11, 1.0))));
-    }
-
-    @Test
     public void testAllZeros() {
 
         assertThat(ListExercises.returnAllZeros(List.of(2, 4, 0, 8, 16, 0)), equalTo(List.of(0, 0)));

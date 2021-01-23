@@ -7,11 +7,6 @@ public class ListExercises {
         throw new RuntimeException("not implemented yet");
     }
 
-    public static List<Number> returnAllOnesDifferentTypes(List<Number> input) {
-
-        throw new RuntimeException("not implemented yet");
-    }
-
     public static List<Integer> returnAllZeros(List<Integer> input) {
 
         throw new RuntimeException("not implemented yet");
