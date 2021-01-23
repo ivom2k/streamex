@@ -47,7 +47,7 @@ public class ListExercises {
         throw new RuntimeException("not implemented yet");
     }
 
-    public static List<Integer> getSumOfFirstThreeToThePowerOfTwo(List<Integer> input) {
+    public static Integer getSumOfFirstThreeToThePowerOfTwo(List<Integer> input) {
 
         throw new RuntimeException("not implemented yet");
     }
