@@ -91,7 +91,7 @@ public class ListTests {
     @Test
     public void testSumOfFirstThreeToThePowerOfTwo() {
 
-        assertThat(ListExercises.getSumOfFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), equalTo(84));
+        assertThat(ListExercises.getSumOfFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), is(84));
 
         assertThat(ListExercises.getSumOfFirstThreeToThePowerOfTwo(List.of(2, 4, 8, 16, 32, 64)), is(not(196)));
     }

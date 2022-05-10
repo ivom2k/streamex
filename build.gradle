@@ -10,6 +10,7 @@ repositories {
     jcenter() // Jcenter is a superset of mavenCentral, including many additional jars.
     // Jcenter performance is better than mavenCentral.
     // MavenCentral will automatically download many IDE-related indexes, and these are used less often which are not required.
+    // 2022 update - jcenter() is deprecated and mavenCentral is recommended to use
 }
 
 dependencies {
