@@ -39,7 +39,6 @@ public class ListTests {
         assertThat(ListExercises.getAllOdds(List.of(2, 4, 7, 15, 32, 65)), equalTo(List.of(7, 15, 65)));
 
         assertThat(ListExercises.getAllOdds(List.of(2, 4, 7, 15, 32, 65)), is(not(List.of(2, 4, 7, 15, 32, 65))));
-
     }
 
     @Test
